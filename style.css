@@ -579,8 +579,53 @@ p {
         margin-top: 1rem !important;
     }
 
+    .services-section {
+        margin-bottom: 0;
+    }
+
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    .services-content .secondary-heading {
+        text-align: center;
+    }
+
+    .services-content .services-para {
+        text-align: center;
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .services-content .services-btn {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .award-hero-box .award-heading {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+    }
+
+    .award-hero-box .award-description {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.875;
+        padding-right: 0;
+    }
+
+    .award-hero-box .delivered-customers {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .award-hero-box .delivered-tex {
+        font-size: 14px;
+        font-weight: 400;
+
     }
 
 }
