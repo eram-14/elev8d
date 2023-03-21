@@ -261,10 +261,15 @@ p {
     overflow: visible;
 }
 
+.award-hero-img {
+    width: 100%;
+}
+
 .back-hero-image {
     position: absolute;
     top: 12px;
     left: 0;
+    width: 100%;
     z-index: -1;
 }
 
