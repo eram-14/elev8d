@@ -60,11 +60,37 @@
     .fontChange2{
         font-size: 16px;
     }
+    .fontChange3{
+        font-size: 12px;
+    }
     .cardDesc{
         font-size: 18px;
     }
     .cardName{
         font-size: 20px;
+    }
+
+    /* for Spot Section  */
+    .spot1{
+        height: 315px;
+        width: 345px;
+        padding-top: 0px;
+    }
+    .spot-outer {
+        padding: 50px 0px;
+    }
+    .block1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .block1Details{
+        align-items: center;
+    }
+    .blockFont{
+        text-align: center;
+    }
+    .iconClass{
+        height:72.5px;
     }
 }
 
