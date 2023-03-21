@@ -26,7 +26,8 @@ html,
     font-family: 'Inter';
     /* 10px */
     /* font-size: 10px; */
-    /* overflow-x: hidden; */
+    /* font-size: 10px; */
+    overflow-x: hidden;
 }
 
 body {
@@ -96,21 +97,6 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-}
-
-/* ////////////////// */
-/* utility class */
-/* ////////////////// */
-
-.pink-heading {
-    color: #FC81FE;
-}
-
-
-/* Services Section */
-
-.container {
-    max-width: 120rem;
 }
 
 .services-section {
