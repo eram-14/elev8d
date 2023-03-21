@@ -8,7 +8,7 @@ html,
     margin: 0;
     box-sizing: border-box;
     font-family: 'Inter';
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 
 }
 
@@ -181,6 +181,7 @@ p {
     grid-template-columns: 1fr 1fr;
     gap: 9.6rem;
     align-items: center;
+    overflow: hidden;
 }
 
 .award-hero-box {
