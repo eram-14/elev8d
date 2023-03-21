@@ -2,6 +2,19 @@
     .services-section {
         margin: 4rem auto;
     }
+
+    .services {
+        position: relative;
+        z-index: 10;
+    }
+
+    .services .service-background-image {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        right: -10px;
+        bottom: 100px;
+    }
     .services-grid {
         padding: 1rem 1rem;
         display: grid;
@@ -34,3 +47,4 @@
         grid-row-end: 2;
     }
 }
+
