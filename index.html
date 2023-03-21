@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,10 +15,20 @@
 
 <body>
     <!-- First Section -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="sideNavInner">
+            <a class="sidebarItem" href="#">Home</a>
+            <a class="sidebarItem"  href="#">Contact</a>
+            <a class="sidebarItem"  href="#">Blog</a>
+            <a class="sidebarItem"  href="#">Digital-Marketing</a>
+            <a class="sidebarItem"  href="#">Web-Design</a>
+        </div>
+    </div>
     <section class="container first-section">
         <header class="navbar">
             <img src="./assets/Logo.svg" />
-            <img src="./assets/bar.svg" />
+            <img src="./assets/bar.svg" onclick="openNav()" />
         </header>
         <div class="row mx-auto w-100 pt-5 justify-content-between">
             <div class="col-md-6 mx-5 bannerText">
@@ -29,7 +38,7 @@
                         class="primary">Elev8d</span> we help you shine bright, long and proud by amplifying your
                     voice
                 </p>
-                <img class="overlay" src="./assets/ellipse.png" />
+                <!-- <img class="overlay" src="./assets/ellipse.png" /> -->
                 <button class="btnGradient mt-3">Start your Project</button>
             </div>
             <div class="col-md-4 text-center">
@@ -83,7 +92,8 @@
                         </div>
                         <div class="block1Details">
                             <h2 class="headSyling">AI technology</h2>
-                            <p class="tertiary blockFont">Just like our previous customers in the Elev8d family, we have nurtured
+                            <p class="tertiary blockFont">Just like our previous customers in the Elev8d family, we have
+                                nurtured
                                 and maintained their <span class="primary">#1 spot in google </span>(with over 100
                                 search KEYWORDS) for over 6 years and <span class="primary">counting AUSTRAILA </span>
                                 WIDE, we even have tried competed against government site 😊 but came in 2nd place.
@@ -97,7 +107,8 @@
                         </div>
                         <div class="block1Details">
                             <h2 class="headSyling">Total Transparency</h2>
-                            <p class="tertiary blockFont">Remember that’s even threw a pandemic and the ever so quickly changing digital world.
+                            <p class="tertiary blockFont">Remember that’s even threw a pandemic and the ever so quickly
+                                changing digital world.
                                 <span class="primary">Google is always changing their game, SO DO WE. </span>
                             </p>
                         </div>
@@ -109,7 +120,8 @@
                         </div>
                         <div class="block1Details">
                             <h2 class="headSyling">Education-Focused</h2>
-                            <p class="tertiary blockFont">In like any industry the best STRATEGY is to continually <span class="primary">learn,
+                            <p class="tertiary blockFont">In like any industry the best STRATEGY is to continually <span
+                                    class="primary">learn,
                                     adapt and flow within the present moment, to stay on top this beautiful game that is
                                     LIFE.</span></p>
                         </div>
@@ -153,7 +165,7 @@
                     <div class="service-icon">
                         <img src="assets/ser-icon-1.png" alt="service-icon-1">
                     </div>
-                    <h3 class="service-heading">Technical <span class="pink-heading">Audit</span></h3>
+                    <h3 class="service-heading">Technical <span class="secondary">Audit</span></h3>
                     <p class="service-description">In the right hands, SEO is a highly effective way to increase your
                         website’s traffic and gain qualified leads.</p>
                 </div>
@@ -161,7 +173,7 @@
                     <div class="service-icon">
                         <img src="assets/ser-icon-2.png" alt="service-icon-2">
                     </div>
-                    <h3 class="service-heading"><span class="pink-heading">Competitive</span> Analysis</h3>
+                    <h3 class="service-heading"><span class="secondary">Competitive</span> Analysis</h3>
                     <p class="service-description">In the right hands, SEO is a highly effective way to increase your
                         website’s traffic and gain qualified leads.</p>
                 </div>
@@ -169,7 +181,7 @@
                     <div class="service-icon">
                         <img src="assets/ser-icon-3.png" alt="service-icon-3">
                     </div>
-                    <h3 class="service-heading"><span class="pink-heading">Monthly</span> updates</h3>
+                    <h3 class="service-heading"><span class="secondary">Monthly</span> updates</h3>
                     <p class="service-description">In the right hands, SEO is a highly effective way to increase your
                         website’s traffic and gain qualified leads.</p>
                 </div>
@@ -177,7 +189,7 @@
                     <div class="service-icon">
                         <img src="assets/ser-icon-4.png" alt="service-icon-4">
                     </div>
-                    <h3 class="service-heading"><span class="pink-heading">Trusted</span> Partner</h3>
+                    <h3 class="service-heading"><span class="secondary">Trusted</span> Partner</h3>
                     <p class="service-description">In the right hands, SEO is a highly effective way to increase your
                         website’s traffic and gain qualified leads.</p>
                 </div>
@@ -185,7 +197,7 @@
                     <div class="service-icon">
                         <img src="assets/ser-icon-5.png" alt="service-icon-5">
                     </div>
-                    <h3 class="service-heading"><span class="pink-heading">Reporting</span> Dashboard</h3>
+                    <h3 class="service-heading"><span class="secondary">Reporting</span> Dashboard</h3>
                     <p class="service-description">In the right hands, SEO is a highly effective way to increase your
                         website’s traffic and gain qualified leads.</p>
                 </div>
@@ -193,14 +205,14 @@
                     <div class="service-icon">
                         <img src="assets/ser-icon-6.png" alt="service-icon-6">
                     </div>
-                    <h3 class="service-heading">Keyword <span class="pink-heading">Research</span></h3>
+                    <h3 class="service-heading">Keyword <span class="secondary">Research</span></h3>
                     <p class="service-description">In the right hands, SEO is a highly effective way to increase your
                         website’s traffic and gain qualified leads.</p>
                 </div>
             </div>
 
             <div class="services-content">
-                <h2 class="secondary-heading">How much do you believe you are <span class="pink-heading">WORTH?</span>
+                <h2 class="secondary-heading">How much do you believe you are <span class="secondary">WORTH?</span>
                 </h2>
                 <p class="services-para">Your customers attention span is getting shorter by the day and your
                     competitors are getting wiser … to keep their Attention Elev8d makes your customers experience as
@@ -247,8 +259,8 @@
         </div>
         <div class=" inner row">
             <div class="col-md-8">
-                <h1>The Work We've <br /><span class="secondary">Already Finished</span></h1>
-                <p class="tertiary">
+                <h1 class="mt-5">The Work We've <br /><span class="secondary">Already Finished</span></h1>
+                <p class="tertiary my-3">
                     The importance of <span class="primary">SEO services</span> for companies seeking to attract new
                     customers and increase traffic cannot be overstated.
                 </p>
@@ -285,20 +297,22 @@
 
             <h1 class="secondary pb-5 fontChange"><span class="colorMePink">All Over the World</span></h1>
             <p class="pb-md-4 px-3 px-md-5 fontChange2 pb-0 mb-0 ">
-                We believe that everyone deserves to be SEEN, we at Elev8d are 
+                We believe that everyone deserves to be SEEN, we at Elev8d are
                 <span class="primary">joyfully curious to learn </span>
                 about your customers as best we can by finding their habits & motivations so we can use
                 <span class="primary">all our energy </span>
                 to create a strategy that is strategically aligned and aimed towards the right audience for YOU…
                 <span class="primary">WORK SMART NOT HARD</span>
             </p>
-            <p class="pb-2 pb-md-4 fontChange2 px-3">We have found out the hard way that if you 
-                <span class="primary">AIM for everyone you will MISS.</span></p>
+            <p class="pb-2 pb-md-4 fontChange2 px-3">We have found out the hard way that if you
+                <span class="primary">AIM for everyone you will MISS.</span>
+            </p>
 
         </div>
         <div class="row gx-0 gx-md-5 d-flex flex-column flex-md-row justify-content-around">
             <div class="col-12 col-md-5 cards primary mx-2">
-                <h2 class="cardDesc fontChange3">“High standard and excellent quality of work. They helped my business grow in digital.”</h2>
+                <h2 class="cardDesc fontChange3">“High standard and excellent quality of work. They helped my business
+                    grow in digital.”</h2>
                 <div class="d-flex justify-content-between ">
                     <div class="d-flex flex-column">
                         <h6 class="cardName ">Peter Tailor</h6>
@@ -309,7 +323,8 @@
 
             </div>
             <div class="col-12 col-md-5 cards primary mx-2 mt-4 mt-md-0">
-                <h2 class="cardDesc">“High standard and excellent quality of work. They helped my business grow in digital.”</h2>
+                <h2 class="cardDesc">“High standard and excellent quality of work. They helped my business grow in
+                    digital.”</h2>
                 <div class="d-flex justify-content-between">
                     <div class="d-flex flex-column">
                         <h6 class="cardName">Nina Kent</h6>
@@ -321,13 +336,23 @@
         </div>
         <div class="text-center mb-5">
             <h1 class="mt-4 mt-md-0 pt-5">We Guarantee</h1>
-            <p class="paraSpace fontChange2">Going back to our strategy, what makes you happy, makes us happy. We will do everything in our power to keep it that way. Whether you’re a large corporate to the smallest business, we will treat you the same and be there for you every step of the way.</p>
+            <p class="paraSpace fontChange2">Going back to our strategy, what makes you happy, makes us happy. We will
+                do everything in our power to keep it that way. Whether you’re a large corporate to the smallest
+                business, we will treat you the same and be there for you every step of the way.</p>
             <button class="btnGradient mt-3">Lets AIM together</button>
         </div>
 
     </section>
 
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
 
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 
 </body>
 
