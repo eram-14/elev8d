@@ -8,7 +8,8 @@ html,
     margin: 0;
     box-sizing: border-box;
     font-family: 'Inter';
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+
 }
 
 body {
@@ -239,7 +240,7 @@ p {
 
 .back-hero-image {
     position: absolute;
-    top: 12px;
+    top: 0px;
     left: 0;
     width: 100%;
     z-index: -1;
