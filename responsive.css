@@ -46,5 +46,25 @@
         grid-row-start: 1;
         grid-row-end: 2;
     }
+    .overlay{
+        display:none;
+    }
+    
+    /* For Last Section */
+    .cards{
+        padding: 40px 36px 36px 36px !important;
+    }
+    .fontChange{
+        font-size: 32px;
+    }
+    .fontChange2{
+        font-size: 16px;
+    }
+    .cardDesc{
+        font-size: 18px;
+    }
+    .cardName{
+        font-size: 20px;
+    }
 }
 
