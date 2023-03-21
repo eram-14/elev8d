@@ -143,6 +143,8 @@ p {
     font-size: 16px;
     line-height: 24px;
 }
+/* Service Section */
+
 
 .services-section {
     margin: 8rem auto;
@@ -151,10 +153,14 @@ p {
 
 .services {
     padding: 1.875rem 1.875rem;
-    background-image: url('assets/ser-eliptical.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    position: relative;
+    z-index: 10;
+}
+
+.service-background-image {
+    position: absolute;
+    z-index: -1;
+    right: 45px;
 }
 
 .services-grid {
