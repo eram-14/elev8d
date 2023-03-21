@@ -26,7 +26,11 @@ html,
     font-family: 'Inter';
     /* 10px */
     /* font-size: 10px; */
+<<<<<<< HEAD
     /* overflow-x: hidden; */
+=======
+    overflow-x: hidden;
+>>>>>>> 6ea54173b381b4b70f35fbca0c71818b16ce2bab
 }
 
 body {
@@ -266,5 +270,86 @@ p {
     top: 12px;
     left: 0;
     z-index: -1;
+}
+
+/* spot google */
+.spotGoogle{
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
+
+.divideCol{
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-between;
+}
+.spot1{
+height:590px;
+width:530px;
+padding-top: 100px;    
+}
+
+.spot12{
+    display:flex;
+    flex-direction: column;
+    
+}
+.colorMePink{
+    color: #E761E9;
+}
+.block1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 31px 31px 30px;
+    background: linear-gradient(180deg, rgba(126, 130, 153, 0.18) 0%, rgba(126, 130, 153, 0) 100%);
+border-width: 1px 1px 0px 1px;
+border-style: solid;
+border-color: rgba(126, 130, 153, 0.09);
+border-radius: 40px;
+}
+
+
+.iconClass{
+    width: 45px;
+    height: 45px;
+}
+.block1Details{
+    margin-left: 15.4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 19.3625px 0px 0px;
+    gap: 0.8px;
+}
+.headerStyling{
+    font-weight: 700;
+font-size: 44px;
+line-height: 53px;
+}
+.headStyling{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 41px;
+}
+.paraStyling{
+ font-weight: 300;
+font-size: 18px;
+line-height: 34px;
+}
+
+p{
+    color: rgba(169, 164, 171, 0.78);
+}
+
+/* last Section */
+
+.cards{
+    background: linear-gradient(180deg, #282A36 0%, rgba(42, 43, 49, 0) 100%);
+border-width: 1px 1px 0px 1px;
+border-style: solid;
+border-color: rgba(126, 130, 153, 0.09);
+border-radius: 40px;
 }
 
