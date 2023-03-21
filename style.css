@@ -98,6 +98,8 @@ p {
     padding: 1.875rem 1.875rem;
     background-image: url('assets/ser-eliptical.png');
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .services-grid {
