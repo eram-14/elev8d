@@ -1,0 +1,36 @@
+@media(max-width: 830px) {
+    .services-section {
+        margin: 4rem auto;
+    }
+    .services-grid {
+        padding: 1rem 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service-box {
+        padding: 2rem 2rem;
+    }
+    .service-heading {
+        font-size: 1.375rem;
+        font-weight: 600;
+        color: #FFFFFF;
+        padding: 1.25rem 0;
+    }
+    .secondary-heading {
+        font-size: 1.75rem;
+    }
+    .award-hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        align-items: center;
+    }
+    .award-hero .award-hero-box {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .award-hero .hero-image-box {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
