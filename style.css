@@ -30,7 +30,7 @@ body {
 }
 
 section {
-    max-width: 900px !important;
+    max-width: 1140px !important;
     margin: auto;
 }
 
@@ -422,9 +422,9 @@ p {
 
 /* Award Section */
 
-/* .section-award {
+.section-award {
     background-color: #090B11;
-} */
+}
 
 .award-hero {
     margin: 0 auto;
@@ -464,7 +464,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 1rem;
 }
 
