@@ -36,10 +36,17 @@ section {
 
 .main {
     background: url('./assets/section-1.png');
-    background-color: #1A182C;
-    background-position: center center;
+    /* background-color: #1A182C; */
+    /* background-position: center center;
     background-position-x: center;
     background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* background-color: #1A182C; */
+    background-position: center center;
+    /* background-position-x: center;
+    background-position-y: center; */
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -708,7 +715,7 @@ p {
 
 .professional-background-img {
     background: url('./assets/section-professional-background-img.png');
-    background-color: #1A182C;
+    /* background-color: #1A182C; */
     background-position: center center;
     /* background-position-x: center;
     background-position-y: center; */
