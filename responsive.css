@@ -137,6 +137,15 @@
 }
 
 @media(max-width: 820px) {
+
+    .cardSection {
+       flex-direction: column;
+    }
+    .cards{
+        margin:auto !important;
+        width: 100%;
+        text-align: center;
+    }
     .sidenav a {
         font-size: 30px;
         line-height: 50px;
@@ -183,15 +192,7 @@
 
     .seo-section div:first-child {
         padding: 1rem 0;
-    }
-
-    .brand {
-        width: 70px;
-    }
-
-    .img-resp-none {
-        display: none;
-    }
+    }  
 }
 
 @media screen and (max-height: 450px) {
