@@ -1,4 +1,8 @@
 @media (max-width: 1024px) {
+
+    .seo-section {
+        padding: 1.5rem !important;
+    }
     .sidenav a {
         font-size: 50px;
         line-height: 80px;
@@ -178,21 +182,19 @@
         width: 100%;
     }
 
-    .imgCol .col-lg-6 {
-        margin-right: 0 !important;
-    }
-
-    .imgCol .col-lg-5 {
-        margin-top: 0 !important;
-    }
-
-    .seo-section {
-        padding: 1.5rem !important;
-    }
-
     .seo-section div:first-child {
         padding: 1rem 0;
     }  
+}
+
+@media (max-width: 768px) {
+    .imgCol .col-md-6:nth-child(even) img{
+        margin:auto;
+    }
+    .imgCol{
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
 }
 
 @media screen and (max-height: 450px) {
