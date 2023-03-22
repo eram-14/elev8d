@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <!-- First Section -->
+    <!-- SideNav -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="sideNavInner">
@@ -26,56 +26,61 @@
             <a class="sidebarItem" href="#">Web-Design</a>
         </div>
     </div>
+    <!-- First Section -->
     <div class="main">
-    <section class="first-section">
-        <header class="navbar" style="padding: 30px 15px 30px 15px;">
-            <img style="width: 100px;
-            max-width: 100%;
-            height: 30px;" src="./assets/Logo.svg" />
-            <img id="hamburgerIcon" src="./assets/bar.svg" onclick="openNav()" />
-        </header>
-        <div class="row mx-auto w-100 pt-5 justify-content-between align-items-center" style="min-height: 80vh;
-        padding: 0px 20px 0px 20px;">
-            <div class="col-md-7 bannerText">
-                <h1>at Elev8d we help <br /><span class="secondary">you shine bright</span></h1>
-                <p style="width: 500px;" class="tertiary">It so difficult to be <span class="primary">SEEN</span> in
-                    this oh so saturated world & decreasing attention span however at <span
-                        class="primary">Elev8d</span> we help you shine bright, long and proud by amplifying your
-                    voice
-                </p>
-                <!-- <img class="overlay" src="./assets/ellipse.png" /> -->
-                <button class="btnGradient mt-3">Start your Project</button>
+        <section class="first-section">
+            <header class="navbar" style="padding: 30px 15px 30px 15px;">
+                <div>
+                    <img style="width: 100px;
+        max-width: 100%;
+        height: 30px;" src="./assets/Logo.svg" />
+                </div>
+                <div>
+                    <img id="hamburgerIcon" src="./assets/bar.svg" onclick="openNav()" />
+                </div>
+            </header>
+            <div class="banner row mx-auto w-100 pt-5 justify-content-between align-items-center">
+                <div class="col-md-7 bannerText">
+                    <h1>at Elev8d we help <br /><span class="secondary">you shine bright</span></h1>
+                    <p class="tertiary">It so difficult to be <span class="primary">SEEN</span> in
+                        this oh so saturated world & decreasing attention span however at <span
+                            class="primary">Elev8d</span> we help you shine bright, long and proud by amplifying your
+                        voice
+                    </p>
+                    <!-- <img class="overlay" src="./assets/ellipse.png" /> -->
+                    <button class="btnGradient mt-3">Start your Project</button>
+                </div>
+                <div class="col-md-5 bannerImg text-center">
+                    <img class="bannerImg w-100" src="./assets/bulb.png" />
+                </div>
             </div>
-            <div class="col-md-5 text-center">
-                <img class="bannerImg w-100" src="./assets/bulb.png" />
+            <div class="row w-100 box mt-5 text-center">
+                <div class="col-md-3 col-sm-6">
+                    <h1> <span id="counter-1">100</span>M+ </h1>
+                    <p class="tertiary">Happy customers</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h1> <span id="counter-2">100</span>%</h1>
+                    <p class="tertiary">Increase in ROIS</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h1> <span id="counter-3">100</span>+</h1>
+                    <p class="tertiary">Companies trust us</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h1> <span id="counter-4">100</span>K+</h1>
+                    <p class="tertiary">Projects completed</p>
+                </div>
             </div>
-        </div>
-        <div class="row w-100 box mt-5 text-center">
-            <div class="col-md-3 col-sm-6">
-                <h1>100M+</h1>
-                <p class="tertiary">Happy customers</p>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h1>100%</h1>
-                <p class="tertiary">Increase in ROIS</p>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h1>80+</h1>
-                <p class="tertiary">Companies trust us</p>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h1>4K+</h1>
-                <p class="tertiary">Projects completed</p>
-            </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
     <!-- Spot Google Section -->
     <Section class="spotGoogle container">
         <div className="">
             <div class="divideCol row gx-3">
                 <div class="col-md-5 text-center text-md-start">
-                    <h1 class="headerStyling fontChange">#1 spot in <span class="colorMePink headerStyling fontChange">google</span></h1>
+                    <h1 class="headerStyling fontChange">#1 spot in <span
+                            class="colorMePink headerStyling fontChange">google</span></h1>
                     <div class="spot-outer">
                         <img class="spot1" src="./assets/Spot1.png" />
                     </div>
@@ -339,7 +344,6 @@
         </div>
 
     </section>
-
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "100%";
@@ -348,6 +352,16 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
+        var i = 0;
+        const myInterval = setInterval(function () {
+            i += 1
+            if (i == 100)
+                clearInterval(myInterval)
+            document.getElementById('counter-1').innerHTML = i
+            document.getElementById('counter-2').innerHTML = i
+            document.getElementById('counter-3').innerHTML = i
+            document.getElementById('counter-4').innerHTML = i
+        }, 5)
     </script>
 
 </body>
