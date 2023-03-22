@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -19,19 +20,23 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="sideNavInner">
             <a class="sidebarItem" href="#">Home</a>
-            <a class="sidebarItem"  href="#">Contact</a>
-            <a class="sidebarItem"  href="#">Blog</a>
-            <a class="sidebarItem"  href="#">Digital-Marketing</a>
-            <a class="sidebarItem"  href="#">Web-Design</a>
+            <a class="sidebarItem" href="#">Contact</a>
+            <a class="sidebarItem" href="#">Blog</a>
+            <a class="sidebarItem" href="#">Digital-Marketing</a>
+            <a class="sidebarItem" href="#">Web-Design</a>
         </div>
     </div>
-    <section class="container first-section">
-        <header class="navbar">
-            <img src="./assets/Logo.svg" />
-            <img src="./assets/bar.svg" onclick="openNav()" />
+    <div class="main">
+    <section class="first-section">
+        <header class="navbar" style="padding: 30px 15px 30px 15px;">
+            <img style="width: 100px;
+            max-width: 100%;
+            height: 30px;" src="./assets/Logo.svg" />
+            <img id="hamburgerIcon" src="./assets/bar.svg" onclick="openNav()" />
         </header>
-        <div class="row mx-auto w-100 pt-5 justify-content-between">
-            <div class="col-md-6 mx-5 bannerText">
+        <div class="row mx-auto w-100 pt-5 justify-content-between align-items-center" style="min-height: 80vh;
+        padding: 0px 20px 0px 20px;">
+            <div class="col-md-7 bannerText">
                 <h1>at Elev8d we help <br /><span class="secondary">you shine bright</span></h1>
                 <p style="width: 500px;" class="tertiary">It so difficult to be <span class="primary">SEEN</span> in
                     this oh so saturated world & decreasing attention span however at <span
@@ -41,27 +46,17 @@
                 <!-- <img class="overlay" src="./assets/ellipse.png" /> -->
                 <button class="btnGradient mt-3">Start your Project</button>
             </div>
-            <div class="col-md-4 text-center">
-                <img class="bannerImg" src="./assets/bulb.png" />
-            </div>
-            <!-- responsive -->
-            <div class=" bannerTextResp mt-3">
-                <h1>at Elev8d we help <br /><span class="secondary">you shine bright</span></h1>
-                <p class="tertiary">It so difficult to be <span class="primary">SEEN</span> in
-                    this oh so saturated world & decreasing attention span however at <span
-                        class="primary">Elev8d</span> we help you shine bright, long and proud by amplifying your
-                    voice
-                </p>
-                <button class="btnGradient mt-3">Start your Project</button>
+            <div class="col-md-5 text-center">
+                <img class="bannerImg w-100" src="./assets/bulb.png" />
             </div>
         </div>
         <div class="row w-100 box mt-5 text-center">
             <div class="col-md-3 col-sm-6">
-                <h1>1M+</h1>
+                <h1>100M+</h1>
                 <p class="tertiary">Happy customers</p>
             </div>
             <div class="col-md-3 col-sm-6">
-                <h1>90%</h1>
+                <h1>100%</h1>
                 <p class="tertiary">Increase in ROIS</p>
             </div>
             <div class="col-md-3 col-sm-6">
@@ -74,6 +69,7 @@
             </div>
         </div>
     </section>
+</div>
     <!-- Spot Google Section -->
     <Section class="spotGoogle container">
         <div className="">
@@ -159,7 +155,7 @@
     <!-- Services Section -->
     <section class="services-section container">
         <div class="services">
-            <img src="assets/ser-eliptical.png" alt="services eliptical image" class="service-background-image">
+            <!-- <img src="assets/ser-eliptical.png" alt="services eliptical image" class="service-background-image"> -->
             <div class="services-grid">
                 <div class="service-box">
                     <div class="service-icon">
@@ -219,7 +215,7 @@
                     delightful and efficient as we can, so they are able to view your product or service in a positive
                     light and as smooth as possible, hopefully creating raving fans out of them, they are worth their
                     weight in GOLD. Have we seen how’s nuts apple fans are?</p>
-                <button class="services-btn">Let us know what you believe your worth</button>
+                <button class="services-btn btnGradient">Let us know what you believe your worth</button>
                 <p class="conversation-text">a conversation with us is FREE*</p>
             </div>
         </div>
@@ -293,7 +289,7 @@
     <section class="container mt-3">
         <div class="text-center">
             <h1 class="p-0 fontChange">Trusted by Professionals</h1>
-            <img class="overlay2 d-none d-md-block" src="./assets/ellipse.png" />
+            <!-- <img class="overlay2 d-none d-md-block" src="./assets/ellipse.png" /> -->
 
             <h1 class="secondary pb-5 fontChange"><span class="colorMePink">All Over the World</span></h1>
             <p class="pb-md-4 px-3 px-md-5 fontChange2 pb-0 mb-0 ">
