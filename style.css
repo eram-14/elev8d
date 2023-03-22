@@ -383,6 +383,10 @@ p {
 
 /* Award Section */
 
+.section-award {
+    background-color: #090B11;
+}
+
 .award-hero {
     margin: 0 auto;
     padding: 0 1rem;
