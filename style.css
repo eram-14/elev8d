@@ -30,7 +30,7 @@ body {
 }
 
 section {
-    max-width: 900px !important;
+    max-width: 1140px;
     margin: auto;
 }
 
@@ -156,6 +156,14 @@ h3{
     font-size: 24px !important;
     font-weight: 500 !important;
     line-height: 41px !important;
+}
+
+.brands{    
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    border-color: #CCCCCC;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 20px 15px 30px 15px;
 }
 
 @media(max-width: 425px) {
@@ -571,10 +579,10 @@ p {
 
 /* fifth section */
 
-.seo-section {
+/* .seo-section {
     padding: 3rem;
     background-color: #0C0E17;
-}
+} */
 
 .inner {
     margin-right: 3rem;
