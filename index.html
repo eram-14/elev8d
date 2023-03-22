@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <!-- SideNav -->
+    <!-- First Section -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="sideNavInner">
@@ -26,54 +26,319 @@
             <a class="sidebarItem" href="#">Web-Design</a>
         </div>
     </div>
-    <!-- First Section -->
     <div class="main">
-        <section class="first-section">
-            <header class="navbar" style="padding: 30px 15px 30px 15px;">
-                <div>
-                    <img style="width: 100px;
+    <section class="first-section">
+        <header class="navbar" style="padding: 30px 15px 30px 15px;">
+            <img style="width: 100px;
             max-width: 100%;
             height: 30px;" src="./assets/Logo.svg" />
+            <img id="hamburgerIcon" src="./assets/bar.svg" onclick="openNav()" />
+        </header>
+        <div class="row mx-auto w-100 pt-5 justify-content-between align-items-center" style="min-height: 80vh;
+        padding: 0px 20px 0px 20px;">
+            <div class="col-md-7 bannerText">
+                <h1>at Elev8d we help <br /><span class="secondary">you shine bright</span></h1>
+                <p style="width: 500px;" class="tertiary">It so difficult to be <span class="primary">SEEN</span> in
+                    this oh so saturated world & decreasing attention span however at <span
+                        class="primary">Elev8d</span> we help you shine bright, long and proud by amplifying your
+                    voice
+                </p>
+                <!-- <img class="overlay" src="./assets/ellipse.png" /> -->
+                <button class="btnGradient mt-3">Start your Project</button>
+            </div>
+            <div class="col-md-5 text-center">
+                <img class="bannerImg w-100" src="./assets/bulb.png" />
+            </div>
+        </div>
+        <div class="row w-100 box mt-5 text-center">
+            <div class="col-md-3 col-sm-6">
+                <h1>100M+</h1>
+                <p class="tertiary">Happy customers</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h1>100%</h1>
+                <p class="tertiary">Increase in ROIS</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h1>80+</h1>
+                <p class="tertiary">Companies trust us</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h1>4K+</h1>
+                <p class="tertiary">Projects completed</p>
+            </div>
+        </div>
+    </section>
+</div>
+    <!-- Spot Google Section -->
+    <Section class="spotGoogle container">
+        <div className="">
+            <div class="divideCol row gx-3">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1 class="headerStyling fontChange">#1 spot in <span class="colorMePink headerStyling fontChange">google</span></h1>
+                    <div class="spot-outer">
+                        <img class="spot1" src="./assets/Spot1.png" />
+                    </div>
                 </div>
-                <div>
-                    <img id="hamburgerIcon" src="./assets/bar.svg" onclick="openNav()" />
-                </div>
-            </header>
-            <div class="banner row mx-auto w-100 pt-5 justify-content-between align-items-center">
-                <div class="col-md-7 bannerText">
-                    <h1>at Elev8d we help <br /><span class="secondary">you shine bright</span></h1>
-                    <p class="tertiary">It so difficult to be <span class="primary">SEEN</span> in
-                        this oh so saturated world & decreasing attention span however at <span
-                            class="primary">Elev8d</span> we help you shine bright, long and proud by amplifying your
-                        voice
-                    </p>
-                    <!-- <img class="overlay" src="./assets/ellipse.png" /> -->
-                    <button class="btnGradient mt-3">Start your Project</button>
-                </div>
-                <div class="col-md-5 bannerImg text-center">
-                    <img class="bannerImg w-100" src="./assets/bulb.png" />
+                <div class="spot12 col-md-5">
+                    <!-- Block one  -->
+                    <div class="block1 block">
+                        <div style="width: 140px;">
+                            <img class="iconClass w-100" src="./assets/Ai.svg">
+                        </div>
+                        <div class="block1Details">
+                            <h2 class="headSyling">AI technology</h2>
+                            <p class="tertiary blockFont">Just like our previous customers in the Elev8d family, we have
+                                nurtured
+                                and maintained their <span class="primary">#1 spot in google </span>(with over 100
+                                search KEYWORDS) for over 6 years and <span class="primary">counting AUSTRAILA </span>
+                                WIDE, we even have tried competed against government site 😊 but came in 2nd place.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Block two  -->
+                    <div class="block1">
+                        <div style="width: 140px;">
+                            <img class="iconClass w-100" src="./assets/Total.svg">
+                        </div>
+                        <div class="block1Details">
+                            <h2 class="headSyling">Total Transparency</h2>
+                            <p class="tertiary blockFont">Remember that’s even threw a pandemic and the ever so quickly
+                                changing digital world.
+                                <span class="primary">Google is always changing their game, SO DO WE. </span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- block 3 -->
+                    <div class="block1">
+                        <div style="width: 140px;">
+                            <img class="iconClass w-100" src="./assets/Edu.svg">
+                        </div>
+                        <div class="block1Details">
+                            <h2 class="headSyling">Education-Focused</h2>
+                            <p class="tertiary blockFont">In like any industry the best STRATEGY is to continually <span
+                                    class="primary">learn,
+                                    adapt and flow within the present moment, to stay on top this beautiful game that is
+                                    LIFE.</span></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row w-100 box mt-5 text-center">
-                <div class="col-md-3 col-sm-6">
-                    <h1> <span id="counter-1">100</span>M+ </h1>
-                    <p class="tertiary">Happy customers</p>
+            <!-- Spot Google Section -->
+            <div class="divideCol row gx-3">
+                <div class="col-md-5 text-center text-md-start order-2 order-md-1">
+                    <h1 class="headerStyling fontChange">Elevate your brand</h1>
+                    <h1 class="headerStyling fontChange">
+                        <span class="colorMePink">on the top positions</span>
+                    </h1>
+                    <p class="paraStyling py-3 fontChange2">We will
+                        <span class="primary">ELEVATE your brand to the top positions in google so your can shine and
+                            flourish.</span>
+                        With the determination and creative power from our
+                        <span class="primary">brilliant CTO </span> and the years of hard ship that we all have
+                        endeavored to test, educate and develop
+                        <span class="primary">OUR STRENGTHS TO SERVE YOU BEST </span> and believe us when we say
+                        hardship, however at Elev8d we don’t call our previous mistakes,
+                        <span class="primary">FAILURES WE CALL IT EDUCATION.</span>
+                        Just ask yourself, you have the capability for <span class="primary">growth to keep up with
+                            US.</span>
+                        <button class="btnGradient mt-3">Come lets Grow together</button>
+                    <p class="fontChange3">a conversation with us is FREE*</p>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <h1> <span id="counter-2">100</span>%</h1>
-                    <p class="tertiary">Increase in ROIS</p>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <h1> <span id="counter-3">100</span>+</h1>
-                    <p class="tertiary">Companies trust us</p>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <h1> <span id="counter-4">100</span>K+</h1>
-                    <p class="tertiary">Projects completed</p>
+                <div class="col-md-5 order-1 order-md-2">
+                    <img class="spot1 w-100 p-0" src="./assets/Spot2.png" />
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </Section>
+
+    <!-- Services Section -->
+    <section class="services-section container">
+        <div class="services">
+            <!-- <img src="assets/ser-eliptical.png" alt="services eliptical image" class="service-background-image"> -->
+            <div class="services-grid">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="assets/ser-icon-1.png" alt="service-icon-1">
+                    </div>
+                    <h3 class="service-heading">Technical <span class="secondary">Audit</span></h3>
+                    <p class="service-description">In the right hands, SEO is a highly effective way to increase your
+                        website’s traffic and gain qualified leads.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="assets/ser-icon-2.png" alt="service-icon-2">
+                    </div>
+                    <h3 class="service-heading"><span class="secondary">Competitive</span> Analysis</h3>
+                    <p class="service-description">In the right hands, SEO is a highly effective way to increase your
+                        website’s traffic and gain qualified leads.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="assets/ser-icon-3.png" alt="service-icon-3">
+                    </div>
+                    <h3 class="service-heading"><span class="secondary">Monthly</span> updates</h3>
+                    <p class="service-description">In the right hands, SEO is a highly effective way to increase your
+                        website’s traffic and gain qualified leads.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="assets/ser-icon-4.png" alt="service-icon-4">
+                    </div>
+                    <h3 class="service-heading"><span class="secondary">Trusted</span> Partner</h3>
+                    <p class="service-description">In the right hands, SEO is a highly effective way to increase your
+                        website’s traffic and gain qualified leads.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="assets/ser-icon-5.png" alt="service-icon-5">
+                    </div>
+                    <h3 class="service-heading"><span class="secondary">Reporting</span> Dashboard</h3>
+                    <p class="service-description">In the right hands, SEO is a highly effective way to increase your
+                        website’s traffic and gain qualified leads.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="assets/ser-icon-6.png" alt="service-icon-6">
+                    </div>
+                    <h3 class="service-heading">Keyword <span class="secondary">Research</span></h3>
+                    <p class="service-description">In the right hands, SEO is a highly effective way to increase your
+                        website’s traffic and gain qualified leads.</p>
+                </div>
+            </div>
+
+            <div class="services-content">
+                <h2 class="secondary-heading">How much do you believe you are <span class="secondary">WORTH?</span>
+                </h2>
+                <p class="services-para">Your customers attention span is getting shorter by the day and your
+                    competitors are getting wiser … to keep their Attention Elev8d makes your customers experience as
+                    delightful and efficient as we can, so they are able to view your product or service in a positive
+                    light and as smooth as possible, hopefully creating raving fans out of them, they are worth their
+                    weight in GOLD. Have we seen how’s nuts apple fans are?</p>
+                <button class="services-btn btnGradient">Let us know what you believe your worth</button>
+                <p class="conversation-text">a conversation with us is FREE*</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="award-section container">
+        <div class="award-hero">
+            <div class="award-hero-box">
+                <h4 class="award-heading">Award-winning and <span class="secondary">Trusted SEO Agency</span></h4>
+                <p class="award-description">Our strategy is that if you are happy, we are happy. Its as simple as that
+                    so we create, play and fight for you needs to help you reach your <span class="award-span">TRUE
+                        POTENTIAL.</span></p>
+                <div class="delivered-customers">
+                    <div class="delivered-imgs">
+                        <img src="assets/customers.png" alt="Customer Photo">
+                    </div>
+                    <p class="delivered-text">Trusted by 1M+ people around<br> the globe</p>
+                </div>
+            </div>
+            <div class="hero-image-box">
+                <img src="assets/customer-img.png" alt="Happy Customers" class="award-hero-img">
+                <img src="assets/backgroud-hero-image.png" alt="background hero image" class="back-hero-image">
+            </div>
+        </div>
+    </section>
+    <!-- Fifth Section -->
+    <section class="container seo-section">
+        <div class="d-flex justify-content-between">
+            <img class="brand" src="./assets/amotrio.svg" />
+            <img class="brand" src="./assets/amanda.svg" />
+            <img class="brand" src="./assets/contour.svg" />
+            <img class="img-resp-none" src="./assets/boogie.svg" />
+            <img class="img-resp-none" src="./assets/nano.svg" />
+            <img class="img-resp-none" src="./assets/homan.svg" />
+            <img class="img-resp-none" src="./assets/wayan.svg" />
+            <img class="img-resp-none" src="./assets/bionic.svg" />
+        </div>
+        <div class=" inner row">
+            <div class="col-md-8">
+                <h1 class="mt-5">The Work We've <br /><span class="secondary">Already Finished</span></h1>
+                <p class="tertiary my-3">
+                    The importance of <span class="primary">SEO services</span> for companies seeking to attract new
+                    customers and increase traffic cannot be overstated.
+                </p>
+            </div>
+        </div>
+        <div class="inner row imgCol">
+            <div class="col-lg-6">
+                <img src="./assets/1.png" />
+                <p class="tertiary mt-3 ms-md-4">SEO Analysis</p>
+                <h3 class="primary ms-md-4">SEO strategy for IT company</h3>
+            </div>
+            <div class="col-lg-5">
+                <img src="./assets/2.png" />
+                <p class="tertiary mt-3 ms-md-4">Technical Audit</p>
+                <h3 class="primary ms-md-4">Partnership SEO consulting</h3>
+            </div>
+            <div class="col-lg-6">
+                <img src="./assets/3.png" />
+                <p class="tertiary mt-3 ms-md-4">Technical Audit</p>
+                <h3 class="primary ms-md-4">SEO plan for a financial agency</h3>
+            </div>
+            <div class="col-lg-5">
+                <img src="./assets/4.png" />
+                <p class="tertiary mt-3 ms-md-4">Keyword Research</p>
+                <h3 class="primary ms-md-4">Real estate SEO campaign</h3>
+            </div>
+        </div>
+    </section>
+    <!-- Last Section -->
+    <section class="container mt-3">
+        <div class="text-center">
+            <h1 class="p-0 fontChange">Trusted by Professionals</h1>
+            <!-- <img class="overlay2 d-none d-md-block" src="./assets/ellipse.png" /> -->
+
+            <h1 class="secondary pb-5 fontChange"><span class="colorMePink">All Over the World</span></h1>
+            <p class="pb-md-4 px-3 px-md-5 fontChange2 pb-0 mb-0 ">
+                We believe that everyone deserves to be SEEN, we at Elev8d are
+                <span class="primary">joyfully curious to learn </span>
+                about your customers as best we can by finding their habits & motivations so we can use
+                <span class="primary">all our energy </span>
+                to create a strategy that is strategically aligned and aimed towards the right audience for YOU…
+                <span class="primary">WORK SMART NOT HARD</span>
+            </p>
+            <p class="pb-2 pb-md-4 fontChange2 px-3">We have found out the hard way that if you
+                <span class="primary">AIM for everyone you will MISS.</span>
+            </p>
+
+        </div>
+        <div class="row gx-0 gx-md-5 d-flex flex-column flex-md-row justify-content-around">
+            <div class="col-12 col-md-5 cards primary mx-2">
+                <h2 class="cardDesc fontChange3">“High standard and excellent quality of work. They helped my business
+                    grow in digital.”</h2>
+                <div class="d-flex justify-content-between ">
+                    <div class="d-flex flex-column">
+                        <h6 class="cardName ">Peter Tailor</h6>
+                        <h4 class="cardPos">Enterpreneur</h4>
+                    </div>
+                    <div><img src="./assets/card1.png" /></div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-5 cards primary mx-2 mt-4 mt-md-0">
+                <h2 class="cardDesc">“High standard and excellent quality of work. They helped my business grow in
+                    digital.”</h2>
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-column">
+                        <h6 class="cardName">Nina Kent</h6>
+                        <h4 class="cardPos">HR manager</h4>
+                    </div>
+                    <div><img src="./assets/card2.png" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mb-5">
+            <h1 class="mt-4 mt-md-0 pt-5">We Guarantee</h1>
+            <p class="paraSpace fontChange2">Going back to our strategy, what makes you happy, makes us happy. We will
+                do everything in our power to keep it that way. Whether you’re a large corporate to the smallest
+                business, we will treat you the same and be there for you every step of the way.</p>
+            <button class="btnGradient mt-3">Lets AIM together</button>
+        </div>
+
+    </section>
 
     <script>
         function openNav() {
@@ -83,16 +348,6 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
-        var i = 0;
-        const myInterval = setInterval(function () {
-            i += 1
-            if (i == 100)
-                clearInterval(myInterval)
-            document.getElementById('counter-1').innerHTML = i
-            document.getElementById('counter-2').innerHTML = i
-            document.getElementById('counter-3').innerHTML = i
-            document.getElementById('counter-4').innerHTML = i
-        }, 5)
     </script>
 
 </body>

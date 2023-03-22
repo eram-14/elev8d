@@ -98,27 +98,16 @@ body {
 }
 
 
-.navbar{
-    max-width: 1140px !important;
-    padding: 30px 15px 30px 15px !important;
-    z-index: 1;
-    width: 100% !important;
-    min-height: 1px;
-    flex-wrap: wrap !important;
-}
-.banner{
-    min-height: 80vh;
-    padding: 0px 20px 0px 20px;
-}
 
-.bannerText{
-    order:1;
-}
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
 
-.bannerImg{
-    order:2;
+    .sidenav a {
+        font-size: 18px;
+    }
 }
-
 
 h1 {
     font-family: 'Inter' !important;
