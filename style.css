@@ -422,9 +422,9 @@ p {
 
 /* Award Section */
 
-.section-award {
+/* .section-award {
     background-color: #090B11;
-}
+} */
 
 .award-hero {
     margin: 0 auto;
@@ -450,13 +450,10 @@ p {
 }
 
 .award-description {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 300;
-    line-height: 2rem;
-    color: #A9A4AB78;
-    padding-right: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    line-height: 30px;
+    color: #A9A4AB78;    
 }
 
 .award-description .award-span {
