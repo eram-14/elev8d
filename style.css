@@ -280,10 +280,21 @@ p {
 
 /* Service Section */
 
+.service-section-background-parallax {
+    background: url('./assets/service-section-background-img.png');
+    background-color: #1A182C;
+    background-position: center center;
+    /* background-position-x: center;
+    background-position-y: center; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .services-section {
     margin: 8rem auto;
-    background-color: #080A10;
+    /* background-color: #080A10; */
 }
 
 .services {
