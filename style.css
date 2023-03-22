@@ -539,13 +539,16 @@ p {
     border-style: solid;
     border-color: rgba(126, 130, 153, 0.09);
     border-radius: 40px;
-    padding: 100px 36px 36px 37px;
+    padding: 100px 36px 36px 36px;
 }
 
 .cardDesc {
     font-weight: 300;
     font-size: 22px;
     line-height: 33px;
+    margin-bottom: 20px;
+    margin-left:24px;
+    margin-right:24px;
 }
 
 .cardName {
@@ -553,6 +556,7 @@ p {
     font-size: 20px;
     line-height: 20px;
     color: #A9A4AB;
+    overflow: hidden;
 }
 
 .cardPos {
@@ -560,8 +564,20 @@ p {
     font-size: 16px;
     line-height: 16px;
     color: rgba(169, 164, 171, 0.4);
+    overflow: hidden;
 }
 
+.realFont{
+    font-size: 44px;
+}
+
+.cardImgPadding{
+    margin-right: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 /* fifth section */
 
 .seo-section {
