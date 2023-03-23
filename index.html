@@ -37,7 +37,7 @@
                     <img id="hamburgerIcon" src="./assets/bar.svg" onclick="openNav()" />
                 </div>
             </header>
-            <div class="banner row mx-auto w-100 pt-5 justify-content-between align-items-center">
+            <div class="banner row mx-auto w-100 pt-5 justify-content-between align-items-center reveal">
                 <div class="col-md-7 bannerText">
                     <h1>at Elev8d we help <br /><span class="secondary">you shine bright</span></h1>
                     <p class="tertiary">It so difficult to be <span class="primary">SEEN</span> in
@@ -85,7 +85,7 @@
                 <h2 class="primary">#1 spot in <span class="secondary headerStyling fontChange">google</span>
                 </h2>
                 <div class="pt-5">
-                    <img class="w-100" src="./assets/Spot1.png" />
+                    <img class="w-100 reveal" src="./assets/Spot1.png" />
                 </div>
             </div>
             <div class="col-md-6">
@@ -148,7 +148,7 @@
                     <p class="fontChange3">a conversation with us is FREE*</p>
                 </div>
                 <div class="col-md-5 order-1 order-md-2">
-                    <img class="spot1 w-100 p-0" src="./assets/Spot2.png" />
+                    <img class="reveal spot1 w-100 p-0" src="./assets/Spot2.png" />
                 </div>
             </div>
         </div>
@@ -304,7 +304,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Last Section -->
     <div class="professional-background-img">
         <section class=" py-5">
@@ -357,35 +357,56 @@
             </div>
             <div class="text-center mb-5">
                 <h2 class="primary mt-4 mt-md-0 pt-5">We Guarantee</h2>
-                <p class="paraSpace fontChange2">Going back to our strategy, what makes you happy, makes us happy. We will
+                <p class="paraSpace fontChange2">Going back to our strategy, what makes you happy, makes us happy. We
+                    will
                     do everything in our power to keep it that way. Whether you’re a large corporate to the smallest
                     business, we will treat you the same and be there for you every step of the way.</p>
                 <button class="btnGradient mt-3">Lets AIM together</button>
             </div>
         </section>
     </div>
-    
 
 
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "100%";
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
             }
+        }
 
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-            var i = 0;
-            const myInterval = setInterval(function () {
-                i += 1
-                if (i == 100)
-                    clearInterval(myInterval)
-                document.getElementById('counter-1').innerHTML = i
-                document.getElementById('counter-2').innerHTML = i
-                document.getElementById('counter-3').innerHTML = i
-                document.getElementById('counter-4').innerHTML = i
-            }, 5)
-        </script>
+        window.addEventListener("load", reveal);
+        window.addEventListener("scroll", reveal);
+        
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        var i = 0;
+        const myInterval = setInterval(function () {
+            i += 1
+            if (i == 100)
+                clearInterval(myInterval)
+            document.getElementById('counter-1').innerHTML = i
+            document.getElementById('counter-2').innerHTML = i
+            document.getElementById('counter-3').innerHTML = i
+            document.getElementById('counter-4').innerHTML = i
+        }, 5)
+    </script>
 
 </body>
 
